@@ -44,16 +44,16 @@ process.stdin.setRawMode(true);
 process.stdin.on('keypress', (str, key) => {
     switch(key.name){
         case 'up':
-            direction = [1,0];
+            direction = direction[0] == -1 ? direction : [1,0];
             break;
         case 'down':
-            direction = [-1,0];
+            direction = direction[0] == 1 ? direction : [-1,0];
             break;
         case 'left':
-            direction = [0,1];
+            direction = direction[1] == -1 ? direction : [0,1];
             break;
         case 'right':
-            direction = [0,-1];
+            direction = direction[1] == 1 ? direction : [0,-1];
             break;
         case 'escape':
         case 'q':
