@@ -1,0 +1,14 @@
+{
+  "name": "snake-e131",
+  "version": "1.0.0",
+  "description": "Play snake over e131 protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jess Shannon",
+  "license": "ISC",
+  "dependencies": {
+    "e131": "^1.1.3"
+  }
+}
